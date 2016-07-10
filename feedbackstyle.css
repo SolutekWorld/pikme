@@ -1,0 +1,207 @@
+/* Dropdown Button */
+div.menu div.icon {display: none;}
+div.nav{
+  width: 100%;
+  float: right;
+  height: 53px;
+   background-color: rgba(19, 35, 47, 0.9)
+}
+body {
+   background: url('pikmebackblurred.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 12pt;
+  overflow: hidden;
+}
+h2 {
+  text-align: center;
+  font: 100 60px/0.8 'Cookie', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+  margin-left: 30px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+form {
+  
+  margin: auto;
+  position: relative;
+  width: 450px;
+  height: 500px;
+  font: 100 30px/0.8 'Cookie', Helvetica, sans-serif;  
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0px solid #999;
+  border: inset 0px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+
+}
+
+
+textarea#feedback {
+  width: 375px;
+  height: 150px;
+  display: block;
+}
+
+button {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: white;
+  font: 100 px/0.8 'Cookie', Helvetica, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+
+button:hover {
+  background: #fff;
+  color: #09C;
+}
+
+button span{
+  font: 100 20px/0.8 'Cookie', Helvetica, sans-serif;
+}
+input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+
+}
+.dropbtn {
+     font-family: 'Titillium Web', sans-serif;
+    background-color: rgba(19, 35, 47, 0.9);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    margin-top: 0px;
+    }
+
+.dropbtn a{
+     color: white;
+     text-decoration: none;
+
+    }
+
+.icon a{
+      font-family: 'Titillium Web', sans-serif;
+    background-color: rgba(19, 35, 47, 0.9);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    margin-top: 0px;
+}
+.dropbtn:hover {
+    background-color: #2ECCFA;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 900;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #D5E5EB}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #2ECCFA;
+}
+
+.icon:hover{
+    background-color: #2ECCFA;
+}
+
+/* When the screen is less than 600 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the menu (div.icon) */
+@media screen and (max-width:600px) {
+  div.menu div:not(:first-child) {display: none;}
+  div.menu div.icon {
+    float: right;
+    display: inline-block;
+  }
+  .dropbtn{
+    padding-top: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgba(19, 35, 47, 0.9);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    margin-top: 0px;
+    width: 120px;
+    z-index: 900;
+  }
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the menu look good on small screens */
+@media screen and (max-width:680px) {
+  div.menu.responsive {position: relative;}
+  div.menu.responsive div.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  div.menu.responsive div {
+    float: left;
+    display: block;
+    clear: left;
+    z-index: 50;
+  }
+  div.menu.responsive a {
+    display: block;
+    text-align: left;
+    z-index: 50;
+  }
+}
